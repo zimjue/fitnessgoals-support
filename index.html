@@ -1,22 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Support – FitnessGoals</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitnessGoals – Ziele aus Apple Health</title>
+  <meta name="description" content="FitnessGoals zeigt dir Schritte & Workout-Ziele aus Apple Health – klar, motivierend, ohne Overkill." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <style>
+    :root { --bg:#0b1220; --card:#121b2f; --txt:#eaf0ff; --muted:#b7c2e1; --accent:#66e3ff; --btn:#1f2a44; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 20% 10%, rgba(102,227,255,.18), transparent 55%),
+                  radial-gradient(900px 500px at 90% 40%, rgba(153,102,255,.14), transparent 55%),
+                  var(--bg);
+      color: var(--txt);
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 56px 18px; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom: 34px; }
+    .brand { font-weight: 700; letter-spacing:.2px; display:flex; align-items:center; gap:10px; }
+    .pill { font-size:12px; padding:6px 10px; background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.12); border-radius:999px; color: var(--muted); }
+    .hero { display:grid; grid-template-columns: 1.2fr .8fr; gap:18px; align-items:stretch; }
+    @media (max-width: 860px){ .hero{ grid-template-columns:1fr; } }
+    h1 { font-size: 44px; line-height:1.05; margin: 0 0 12px; }
+    p { margin:0 0 14px; color: var(--muted); font-size: 16px; line-height:1.55; }
+    .cta { display:flex; gap:10px; flex-wrap:wrap; margin-top: 18px; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding: 12px 16px; border-radius: 14px; text-decoration:none; color: var(--txt);
+      border:1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.06);
+      backdrop-filter: blur(10px);
+    }
+    .btn.primary { background: linear-gradient(135deg, rgba(102,227,255,.22), rgba(102,227,255,.06)); border-color: rgba(102,227,255,.35); }
+    .btn:hover { transform: translateY(-1px); transition:.15s ease; }
+    .card {
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+    @media (max-width: 860px){ .grid{ grid-template-columns: 1fr; } }
+    .feature h3 { margin:0 0 6px; font-size: 16px; }
+    .feature p { margin:0; font-size: 14px; }
+    .shot {
+      height: 320px; border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(102,227,255,.18), transparent 40%),
+        linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.12);
+      display:flex; align-items:center; justify-content:center;
+      color: rgba(255,255,255,.7); font-weight:600;
+      text-align:center;
+      padding: 14px;
+    }
+    .footer { margin-top: 34px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; color: var(--muted); font-size: 13px; }
+    .footer a { color: var(--muted); }
+    .kicker { color: rgba(102,227,255,.9); font-weight:700; letter-spacing:.3px; text-transform: uppercase; font-size: 12px; }
+    .small { font-size: 13px; }
+    ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    li { margin: 6px 0; }
+  </style>
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 40px;">
-  <h1>Support – FitnessGoals</h1>
 
-  <p>Bei Fragen oder Problemen zur App kannst du uns jederzeit kontaktieren:</p>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <span>FitnessGoals</span>
+        <span class="pill">iOS • Apple Health</span>
+      </div>
+      <div class="pill">Klar. Motivierend. Ohne Overkill.</div>
+    </div>
 
-  <p>
-    <strong>E-Mail:</strong><br>
-    <a href="mailto:juzi7@icloud.com">juzi7@icloud.com</a>
-  </p>
+    <div class="hero">
+      <div class="card">
+        <div class="kicker">Ziele aus Apple Health</div>
+        <h1>Dein Fitnessziel.<br/>Jeden Tag klar.</h1>
+        <p>
+          FitnessGoals bringt Schritte- und Workout-Ziele aus Apple Health übersichtlich zusammen – mit Streaks und Verlauf,
+          damit du dranbleibst, ohne dich zu überfordern.
+        </p>
 
-  <p>
-    <strong>Datenschutz:</strong><br>
-    <a href="https://zimjue.github.io/fitnessgoals-support/datenschutz.html">https://zimjue.github.io/fitnessgoals-support/datenschutz</a>
-  </p>
+        <div class="cta">
+          <a class="btn primary" href="https://apps.apple.com/app/id6757391456" target="_blank" rel="noopener">Im App Store ansehen</a>
+          <a class="btn" href="#features">Features</a>
+          <a class="btn" href="datenschutz.html">Datenschutz</a>
+        </div>
+
+        <div class="grid" id="features">
+          <div class="feature card">
+            <h3>Schritte & Workouts</h3>
+            <p>Daily Steps + Workout-Ziele (wöchentlich/monatlich) aus Apple Health.</p>
+          </div>
+          <div class="feature card">
+            <h3>Streaks & Historie</h3>
+            <p>Erfolge sehen, Serien halten, Motivation ohne Druck.</p>
+          </div>
+          <div class="feature card">
+            <h3>Pro: mehr Überblick</h3>
+            <p>Längere Zeiträume (90T/6M/1J) + Jahresrückblick.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:14px" class="small">
+          <strong>Datenschutz:</strong> Gesundheitsdaten bleiben auf deinem Gerät. Zugriff nur mit deiner Erlaubnis.
+        </div>
+      </div>
+
+      <div class="card">
+        <!-- Optional: Replace this placeholder with an actual image:
+             1) Create assets/ folder in your repo
+             2) Add assets/screenshot.png
+             3) Replace the div below with:
+                <img src="assets/screenshot.png" alt="FitnessGoals Screenshot" style="width:100%; border-radius:18px; border:1px solid rgba(255,255,255,.12);" />
+        -->
+        <div class="shot">
+          Screenshot / Mockup Platzhalter<br/>
+          (später ersetzen)
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="kicker">Rechtliches</div>
+          <ul>
+            <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Nutzungsbedingungen (EULA)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> FitnessGoals</div>
+      <div>
+        <a href="datenschutz.html">Datenschutz</a> ·
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">EULA</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
